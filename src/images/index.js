@@ -9,5 +9,9 @@ import icon8 from './file_type_html_icon_130541.png'
 import icon9 from './file_type_css_icon_130661.png'
 import brujula from './Brujula-2.jpg'
 import movies from './unnamed.webp'
+import twiter from './Twitter X (1).png'
+import instagram from './Instagram New 2022 Line.png'
+import linkedlin from './vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930587_72.png'
+import github from './logotipo-de-github.png'
 
-export {brujula, movies, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9}
+export {brujula, movies, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9, twiter, instagram, linkedlin, github}
