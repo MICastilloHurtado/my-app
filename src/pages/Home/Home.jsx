@@ -79,7 +79,7 @@ export default function Home () {
       <p style={{fontSize:'22px', fontFamily:'var(--primary-font)', fontWeight:'700', margin:'0 0 40px 0'}}>Proyectos recientes</p>
       <div className={style.projectContainer}>
         <div className={style.contenido}>
-          <img src={movies} className={style.img} alt='image'/>
+          <img src={movies} className={style.img} alt='image movie'/>
         </div>
         <div className={style.contenido}>
           <h1 className={style.title}>MoviesPlay</h1>
@@ -87,14 +87,14 @@ export default function Home () {
           <p className={style.p2}>Aplicación web full stack para comprar series y películas con un dashboard de administrador (el administador puede activar, desactivar o eliminar peliculas y series, ademas puede ver todas las ventas), carrito de compras, autenticacion de terceros, visualicacion de  contenido, uso de localStorage, paginado, filtrados y ordenamientos, barra de busqueda.
           Logros Destacados: Integración de pasarela de pagos con Stripe, dinamismo en la página.
           <br/>
-          Enlace: <a href='https://luiggi2092.github.io/MoviePlayFront ' target='_blank'>Click aquí</a>
+          Enlace: <a href='https://luiggi2092.github.io/MoviePlayFront ' target='_blank' rel='noreferrer'>Click aquí</a>
 
           </p>
         </div>
       </div>
       <div className={style.projectContainer}>
         <div className={style.contenido}>
-          <img src={brujula} className={style.img} alt='image'/>
+          <img src={brujula} className={style.img} alt='image brujula'/>
         </div>
         <div className={style.contenido}>
           <h1 className={style.title}>Api Paises</h1>
@@ -103,7 +103,7 @@ export default function Home () {
           <br/>
           Tecnologías Utilizadas: React, Node.js, Express, PostgreSQL y Sequelize.
           <br/>
-          Enlace: <a href='https://proyecto-countries.vercel.app' target='_blank'>Click Aquí</a>
+          Enlace: <a href='https://proyecto-countries.vercel.app' target='_blank' rel='noreferrer'>Click Aquí</a>
           </p>
         </div>
         </div>
