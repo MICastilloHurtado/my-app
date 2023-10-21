@@ -13,5 +13,8 @@ import twiter from './Twitter X (1).png'
 import instagram from './Instagram New 2022 Line.png'
 import linkedlin from './vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930587_72.png'
 import github from './logotipo-de-github.png'
+import foods from './rickAndMorthy.jpg'
+import food from './comidas.jpg'
+import me from './45999__1_-removebg-preview.png'
 
-export {brujula, movies, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9, twiter, instagram, linkedlin, github}
+export {me,food, brujula, movies, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9, twiter, instagram, linkedlin, github, foods}

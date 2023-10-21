@@ -1,0 +1,42 @@
+.containerMax {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--Primary, #fae6e6);
+    width: 100vw; /* Usar viewport width para ocupar todo el ancho de la pantalla */
+    height: 100%;
+    padding: 100px 0;
+  }
+
+.title{
+    font-size: 26px;
+    font-family: var(--primary-font);
+}
+
+.left{
+    flex: 1;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.right{
+    flex: 1;
+}
+
+@media(max-width:900px){
+    .containerMax{
+        display: flex;
+        padding: 100px 0;
+    }
+
+    .me{
+        height: 300px;
+        width: 400px;
+    }
+
+    .right{
+        flex: none;
+        text-align: center;
+        width: 100%;
+        margin-top: 60px;
+    }
+}
