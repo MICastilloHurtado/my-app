@@ -9,7 +9,7 @@ export default function Home () {
 
     const descargar = () => {
         const enlace = document.createElement('a');
-        enlace.href = '/Hoja de vida Marcos (4).pdf'; 
+        enlace.href = '/Hoja de vida Marcos (5).pdf'; 
         enlace.download = 'HojadevidaMarcos.pdf';
         enlace.click();
       };
