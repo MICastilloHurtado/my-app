@@ -63,7 +63,8 @@ export default function Home () {
           Mirar todos las publicaciones
         </Link>
         </div>
-        {fetchData && fetchData.allPost.slice(0, 2).map((post) => {
+        {fetchData 
+        ? fetchData.allPost.slice(0, 2).map((post) => {
     return (
         <div className={style.cajaDeComentarios} key={post.id}>
             <h1 className={style.title}>{post.title}</h1>
@@ -71,7 +72,8 @@ export default function Home () {
             <p className={style.p2}>{post.text}</p>
         </div>
          );
-        })}
+        })
+      : <h1>Cargando publicaciones...</h1> }
         
       </div>
 
