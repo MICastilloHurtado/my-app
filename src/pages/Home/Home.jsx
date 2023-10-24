@@ -39,7 +39,7 @@ export default function Home () {
          Me gusta mucho programar, y me gustaría ser parte de un equipo de trabajo ágil y dinámico. Actualmente,
          soy graduado de Henry y estoy en búsqueda laboral. Échale un vistazo a mis proyectos.
         </p>
-         <button onClick={descargar} className={style.all}>Descargar Hoja de Vida</button>
+         <button onClick={descargar} className={style.all}>Descargar CV</button>
         </div>
       </div>
       <div className={style.container2}>

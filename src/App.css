@@ -73,10 +73,3 @@ a:hover {
 header {
   width: 100%;
 }
-
-@media(max-width:900px){
-
-  header{
-      margin: 0 30px;
-  }
-}
