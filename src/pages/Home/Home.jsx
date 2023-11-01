@@ -1,7 +1,5 @@
 import style from './Home.module.css'
 import photo from '../../images/WhatsApp Image 2023-05-21 at 6.38.49 PM.jpeg'
-import axios from 'axios';
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {brujula, movies, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9} from '../../images'
 
@@ -12,20 +10,7 @@ export default function Home () {
         enlace.href = '/Hoja de vida Marcos (6).pdf'; 
         enlace.download = 'HojadevidaMarcos.pdf';
         enlace.click();
-      };
-
-    const [fetchData, setPost] = useState('')
-
-    useEffect(() =>{
-        axios.get('https://portafolio-back-ld0c.onrender.com/post')
-        .then(res => {
-            setPost(res.data)
-        })
-        .catch(error => {
-            console.error('Error fetching data:', error);
-          });        
-    }, [])
-   
+      };   
 
     return (
         <section>
@@ -63,18 +48,18 @@ export default function Home () {
           Mirar todos las publicaciones
         </Link>
         </div>
-        {fetchData 
-        ? fetchData.allPost.slice(0, 2).map((post) => {
-    return (
-        <div className={style.cajaDeComentarios} key={post.id}>
-            <h1 className={style.title}>{post.title}</h1>
-            <p className={style.p2}>{post.date.slice(0, 10)}</p>
-            <p className={style.p2}>{post.text}</p>
+        <div className={style.cajaDeComentarios}>
+            <h1 className={style.title}>Mis pasiones y mis aficciones</h1>
+            <p className={style.p2}>2023-10-04</p>
+            <p className={style.p2}>Soy una persona muy proactiva. Siempre me ha gustado superarme y llevarme al límite en todo lo que hago. Este empoderamiento personal comenzó con el gimnasio. Me gusta mucho levantar pesas y jugar baloncesto. También tengo conocimientos sobre inversiones de todo tipo: Bitcoin, ETF, bolsa de valores, trading, binarias, etc. Siempre suelo investigar e indagar a fondo cuando se trata de algo que capta mi atención, como lo hizo la programación también. Empecé viendo videos en YouTube y cuando creé mi primer 'Hola Mundo' en un archivo index.html, me fascinó y no podía creerlo. Decidí estudiar más a fondo. Hoy en día me siento muy satisfecho y orgulloso de mí mismo por todo lo que he logrado hasta ahora. Mi próximo reto es conseguir, como mínimo, un nivel B2 de inglés.</p>
         </div>
-         );
-        })
-      : <h1>Cargando publicaciones...</h1> }
-        
+
+        <div className={style.cajaDeComentarios}>
+            <h1 className={style.title}>Como me sienta la busqueda laboral sin experiencia?</h1>
+            <p className={style.p2}>2023-10-06</p>
+            <p className={style.p2}>Siento que es como una montaña rusa de emociones. Un día, completas tu preparación para ser desarrollador web y te sientes genial por dominar nuevas habilidades.<br/> Sin embargo, al siguiente día, puedes sentirte un poco desanimado porque aún no te han llamado para ese trabajo que creías perfecto para ti. Pero sé que esto es solo parte del juego mental. La disciplina y la constancia serán clave para lograrlo al final, intento ser el mejor postor en aprendiendo lo que no sé y profundizando lo que si sé. Siempre mantengo la cabeza en alto y no dejo que esos mensajes que empiezan con 'Lamentamos' me afecten demasiado, ¡Ya lo tomo con humor!. ¡Saludos y ánimo a todos los que están en esta travesía</p>
+        </div>
+                
       </article>
 
       <article className={style.container4}>
