@@ -29,7 +29,7 @@ export default function Home () {
 
     return (
         <section>
-            <div className={style.container1}>
+            <article className={style.container1}>
         <div className={style.div1}>
         <img src={photo} alt='Imagen' className={style.imagen}/>
         </div>
@@ -41,8 +41,8 @@ export default function Home () {
         </p>
          <button onClick={descargar} className={style.all}>Descargar CV</button>
         </div>
-      </div>
-      <div className={style.container2}>
+      </article>
+      <article className={style.container2}>
         <h1 className={style.bienvenidos}>Tecnologías</h1>
         <div className={style.iconos}>
           <img src={icon1} className={style.icono} alt="Icono de Redux"/>
@@ -55,8 +55,8 @@ export default function Home () {
           <img src={icon8} className={style.icono} alt="Icono de Redux"/>
           <img src={icon9} className={style.icono} alt="Icono de Redux"/>
         </div>
-      </div>
-      <div className={style.container3}>
+      </article>
+      <article className={style.container3}>
         <div className={style.minicontainer}>
           <p style={{fontSize:'22px', fontFamily:'var(--primary-font)', fontWeight:'700'}}>Publicaciones recientes</p>
         <Link to='/blog'>
@@ -75,9 +75,9 @@ export default function Home () {
         })
       : <h1>Cargando publicaciones...</h1> }
         
-      </div>
+      </article>
 
-      <div className={style.container4}>
+      <article className={style.container4}>
       <p style={{fontSize:'22px', fontFamily:'var(--primary-font)', fontWeight:'700', margin:'0 0 40px 0'}}>Proyectos recientes</p>
       <div className={style.projectContainer}>
         <div className={style.contenido}>
@@ -109,7 +109,7 @@ export default function Home () {
           </p>
         </div>
         </div>
-      </div>
+      </article>
         </section>
     )
 }
