@@ -8,7 +8,7 @@ export default function Footer () {
             <Link to='https://twitter.com/Marcos_mich02' target='_blank'>
             <img src={twiter} className={style.logo} alt='imagen'/>
             </Link>
-            <Link to='https://www.instagram.com/marcos_bpro/' target='_blank'>
+            <Link to='https://www.instagram.com/marcos_castilloh33/' target='_blank'>
             <img src={instagram} className={style.logo} alt='imagen'/>
             </Link>
             <Link to='https://github.com/MICastilloHurtado' target='_blank'>

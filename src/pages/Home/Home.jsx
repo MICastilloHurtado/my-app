@@ -20,9 +20,9 @@ export default function Home () {
         </div>
         <div className={style.div2}>
         <h1 className={style.bienvenidos}>Bienvenidos, yo soy Marcos y soy programador full stack.</h1>
-        <p className={style.p1}>Mi nombre es Marcos Castillo, tengo 22 años y vivo en Medellín. 
+        <p className={style.p1}>Mi nombre es Marcos Castillo, tengo 25 años y vivo en Medellín. 
          Me gusta mucho programar, y me gustaría ser parte de un equipo de trabajo ágil y dinámico. Actualmente,
-         soy graduado de Henry y estoy en búsqueda laboral. Échale un vistazo a mis proyectos.
+         soy graduado de Henry y estoy terminando una Tecnologia en Analisis y Desarrollo de Software en el SENA. Échale un vistazo a mis proyectos.
         </p>
          <button onClick={descargar} className={style.all}>Descargar CV</button>
         </div>
