@@ -16,7 +16,7 @@ export default function Home () {
         <section>
             <article className={style.container1}>
         <div className={style.div1}>
-        <img src={photo} alt='Imagen' className={style.imagen}/>
+        <img src={photo} alt='Retrato de Marcos Castillo' className={style.imagen}/>
         </div>
         <div className={style.div2}>
         <h1 className={style.bienvenidos}>Bienvenidos, yo soy Marcos y soy programador full stack.</h1>
@@ -30,15 +30,15 @@ export default function Home () {
       <article className={style.container2}>
         <h1 className={style.bienvenidos}>Tecnologías</h1>
         <div className={style.iconos}>
-          <img src={icon1} className={style.icono} alt="Icono de Redux"/>
-          <img src={icon2} className={style.icono} alt="Icono de Redux"/>
-          <img src={icon3} className={style.icono} alt="Icono de Redux"/>
-          <img src={icon4} className={style.icono} alt="Icono de Redux"/>
-          <img src={icon5} className={style.icono} alt="Icono de Redux"/>
-          <img src={icon6} className={style.icono} alt="Icono de Redux"/>
-          <img src={icon7} className={style.icono} alt="Icono de Redux"/>
-          <img src={icon8} className={style.icono} alt="Icono de Redux"/>
-          <img src={icon9} className={style.icono} alt="Icono de Redux"/>
+          <img src={icon1} className={style.icono} alt="Tecnología 1"/>
+          <img src={icon2} className={style.icono} alt="Tecnología 2"/>
+          <img src={icon3} className={style.icono} alt="Tecnología 3"/>
+          <img src={icon4} className={style.icono} alt="Tecnología 4"/>
+          <img src={icon5} className={style.icono} alt="Tecnología 5"/>
+          <img src={icon6} className={style.icono} alt="Tecnología 6"/>
+          <img src={icon7} className={style.icono} alt="Tecnología 7"/>
+          <img src={icon8} className={style.icono} alt="Tecnología 8"/>
+          <img src={icon9} className={style.icono} alt="Tecnología 9"/>
         </div>
       </article>
       <article className={style.container3}>
@@ -66,7 +66,7 @@ export default function Home () {
       <p style={{fontSize:'22px', fontFamily:'var(--primary-font)', fontWeight:'700', margin:'0 0 40px 0'}}>Proyectos recientes</p>
       <div className={style.projectContainer}>
         <div className={style.contenido}>
-          <img src={movies} className={style.img} alt='image movie'/>
+          <img src={movies} className={style.img} alt='VistapreviadeMoviesPlay'/>
         </div>
         <div className={style.contenido}>
           <h1 className={style.title}>MoviesPlay</h1>
@@ -81,7 +81,7 @@ export default function Home () {
       </div>
       <div className={style.projectContainer}>
         <div className={style.contenido}>
-          <img src={brujula} className={style.img} alt='image brujula'/>
+          <img src={brujula} className={style.img} alt='VistapreviadelaAPIdepaíses'/>
         </div>
         <div className={style.contenido}>
           <h1 className={style.title}>Api Paises</h1>
