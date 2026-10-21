@@ -57,7 +57,9 @@ export default function Home () {
         <div className={style.cajaDeComentarios}>
             <h1 className={style.title}>Como me sienta la busqueda laboral sin experiencia?</h1>
             <p className={style.p2}>2023-10-06</p>
-            <p className={style.p2}>Siento que es como una montaña rusa de emociones. Un día, completas tu preparación para ser desarrollador web y te sientes genial por dominar nuevas habilidades.<br/> Sin embargo, al siguiente día, puedes sentirte un poco desanimado porque aún no te han llamado para ese trabajo que creías perfecto para ti. Pero sé que esto es solo parte del juego mental. La disciplina y la constancia serán clave para lograrlo al final, intento ser el mejor postor en aprendiendo lo que no sé y profundizando lo que si sé. Siempre mantengo la cabeza en alto y no dejo que esos mensajes que empiezan con 'Lamentamos' me afecten demasiado, ¡Ya lo tomo con humor!. ¡Saludos y ánimo a todos los que están en esta travesía</p>
+            <p className={style.p2}>Siento que es como una montaña rusa de emociones. Un día, completas tu preparación para ser desarrollador web y te sientes genial por dominar nuevas habilidades, superar retos que antes parecían imposibles y darte cuenta de todo lo que has aprendido durante el proceso. Sientes que estás cada vez más cerca de alcanzar tu objetivo y te llenas de ilusión al imaginar cómo será tu primera oportunidad laboral en el mundo de la programación.
+
+Sin embargo, otros días pueden ser difíciles. Envías hojas de vida, revisas tu correo constantemente y esperas una respuesta que a veces tarda mucho en llegar o simplemente nunca llega. Es inevitable sentir frustración, dudar de tus capacidades y preguntarte si realmente estás haciendo las cosas bien. Pero con el tiempo entiendes que conseguir empleo también requiere paciencia, perseverancia y aprender a manejar la incertidumbre.</p>
         </div>
                 
       </article>
