@@ -1,5 +1,5 @@
 import style from './Home.module.css'
-import photo from '../../images/WhatsApp Image 2023-05-21 at 6.38.49 PM.jpeg'
+import photo from '../../images/WhatsApp Image 2026-10-21 at 12.38.06 AM.jpeg'
 import { Link } from 'react-router-dom';
 import {brujula, movies, icon1, icon2, icon3, icon4, icon5, icon6, icon7, icon8, icon9} from '../../images'
 
@@ -21,10 +21,10 @@ export default function Home () {
         <div className={style.div2}>
         <h1 className={style.bienvenidos}>Bienvenidos, yo soy Marcos y soy programador full stack.</h1>
         <p className={style.p1}>Mi nombre es Marcos Castillo, tengo 25 años y vivo en Medellín. 
-         Me gusta mucho programar, y me gustaría ser parte de un equipo de trabajo ágil y dinámico. Actualmente,
-         soy graduado de Henry y estoy terminando una Tecnologia en Analisis y Desarrollo de Software en el SENA. Échale un vistazo a mis proyectos.
+          Me gusta mucho programar, y me gustaría ser parte de un equipo de trabajo ágil y dinámico. Actualmente,
+          soy graduado de Henry y estoy terminando una Tecnologia en Analisis y Desarrollo de Software en el SENA. Échale un vistazo a mis proyectos.
         </p>
-         <button onClick={descargar} className={style.all}>Descargar CV</button>
+          <button onClick={descargar} className={style.all}>Descargar CV</button>
         </div>
       </article>
       <article className={style.container2}>
