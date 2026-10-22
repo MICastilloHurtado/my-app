@@ -1,251 +1,392 @@
-.all{
+
+/* ========================================
+   ESTILOS GENERALES
+======================================== */
+
+.all {
     width: 208px;
-    height: 47px;
+    min-height: 47px;
     border-radius: 2px;
     background: var(--Primary, #FF6464);
-    font-family: Century Gothic;
+    font-family: Century Gothic, sans-serif;
     color: white;
-    margin-top: 50px;
+    margin-top: 40px;
     border: none;
     cursor: pointer;
     font-weight: 900;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.all:hover{
-    background:#F13D3E ;
+.all:hover {
+    background: #F13D3E;
+    transform: translateY(-2px);
 }
 
-.container1{
+/* ========================================
+   SECCIÓN 1: PRESENTACIÓN
+======================================== */
+
+.container1 {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 5% 60px;
+
     display: flex;
     flex-direction: row-reverse;
-    height: auto;
-    padding: 40px; 
-    padding-top: 100px;
-
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 4%;
 }
 
-.div1{
-    flex: 1;
+.div1 {
+    flex: 0 1 30%;
+    min-width: 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.div2{
-    flex: 2;
+.div2 {
+    flex: 1 1 70%;
+    min-width: 0;
+    box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
-    width:100px;
-    padding: 20px 100px;
-    
+    justify-content: center;
+
+    padding: 20px 2%;
 }
 
+.imagen {
+    display: block;
+    width: clamp(200px, 20vw, 320px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 
-.imagen{
-    border-radius: 243px;
-    width: 243px;
-    height: 243px;
+    border-radius: 50%;
     box-shadow: 8px 8px 8px rgb(161, 161, 161);
 }
 
-.bienvenidos{
-    margin: 0px;
+.bienvenidos {
+    width: 100%;
+    margin: 0;
+
     color: var(--Dark-Color, #121847);
     font-family: var(--primary-font);
-    font-size: 44px;
+    font-size: clamp(32px, 3.3vw, 52px);
     font-style: normal;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 1.3;
     text-align: center;
 }
 
-.p1{
-    margin-top: 50px;
+.p1 {
+    max-width: 900px;
+    margin-top: 35px;
+
     color: var(--Dark-Color, #21243D);
-    font-family: Century Gothic;
-    font-size: 16px;
+    font-family: Century Gothic, sans-serif;
+    font-size: clamp(16px, 1.25vw, 21px);
+    line-height: 1.7;
     text-align: center;
 }
 
-.p{
+.p {
     background-color: black;
     display: inline;
     color: white;
     border-radius: 8px;
     text-align: center;
-    padding:  0 20px;
+    padding: 0 20px;
 }
 
-.container2{
-    background-color: hsl(194, 68%, 90%);
-    padding: 70px 50px;
-    display: flex;
-    flex-direction: column;
-}
+/* ========================================
+   SECCIÓN 2: TECNOLOGÍAS
+======================================== */
 
-.iconos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.icono{
-    height: 120px;
-    width: 120px;
-    margin: 30px 50px;
-}
-
-.container2 .bienvenidos{
-    margin-bottom: 50px;
-}
-
-.container3{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 40px 0 80px;
-}
-
-.minicontainer{
-    display: flex;
+.container2 {
+    box-sizing: border-box;
     width: 100%;
-    justify-content: space-between;
-    padding: 0px 30px ;
-}
+    min-height: 100vh;
+    padding: 80px 5%;
 
-.cajaDeComentarios{
-    width: 500px;
+    background-color: hsl(194, 68%, 90%);
+
     display: flex;
     flex-direction: column;
-    padding: 20px 20px ; 
-    margin-top: 30px;
-    background-color: hsl(194, 68%, 90%);
-    border-radius: 4px;
-}
-
-.p2{
-    font-family: Century Gothic;
-    font-size: 16px;
-}
-
-.title{
-    font-size: 26px;
-    font-family: var(--primary-font);
-}
-
-.container4{
-    background-color: hsl(194, 68%, 90%);
-    padding: 60px 40px;
-    
-}
-
-.projectContainer{
-    display: flex;
-    background-color: white;
-    margin-bottom: 20px;
     align-items: center;
+    justify-content: center;
+}
+
+.container2 .bienvenidos {
+    margin-bottom: 65px;
+}
+
+.iconos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 35px;
+}
+
+.icono {
+    width: clamp(70px, 8vw, 120px);
+    height: clamp(70px, 8vw, 120px);
+    margin: 10px;
+    object-fit: contain;
+}
+
+/* ========================================
+   SECCIÓN 3: PUBLICACIONES
+======================================== */
+
+.container3 {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.minicontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.cajaDeComentarios {
+    box-sizing: border-box;
+    flex: 1 1 400px;
+    max-width: 650px;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+    background-color: hsl(194, 68%, 90%);
     border-radius: 4px;
 }
 
-.img{
-    height: 220px;
-    width: 200px;
+.p2 {
+    font-family: Century Gothic, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
 }
 
-.contenido{
-    padding: 10px 20px;
+.title {
+    font-size: clamp(22px, 2vw, 30px);
+    font-family: var(--primary-font);
+    line-height: 1.3;
 }
 
+/* ========================================
+   SECCIÓN 4: PROYECTOS
+======================================== */
+
+.container4 {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 5%;
+
+    background-color: hsl(194, 68%, 90%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+.projectContainer {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    padding: 25px;
+    margin-bottom: 10px;
+
+    background-color: white;
+    border-radius: 4px;
+}
+
+.contenido {
+    box-sizing: border-box;
+    flex: 1 1 50%;
+    min-width: 0;
+    padding: 10px;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/* ========================================
+   TABLET Y MÓVIL
+======================================== */
 
 @media (max-width: 900px) {
+
     .container1 {
         flex-direction: column;
-        flex-wrap: nowrap;
-        height: auto;
-        padding: 40px 20px;
-        gap: 24px;
+        justify-content: center;
+        gap: 30px;
+        padding: 100px 6% 50px;
+    }
+
+    .div1,
+    .div2 {
+        flex: none;
+        width: 100%;
+        padding: 0;
     }
 
     .div1 {
-        flex: none;
-        width: 100%;
         order: 1;
     }
 
     .div2 {
-        flex: none;
-        width: 100%;
-        box-sizing: border-box;
-        padding: 0;
-        align-items: center;
         order: 2;
     }
 
     .imagen {
-        display: block;
-        width: 200px;
-        height: 200px;
-        max-width: 100%;
-        object-fit: cover;
+        width: clamp(170px, 30vw, 230px);
     }
 
     .bienvenidos {
-        width: 100%;
-        font-size: clamp(28px, 6vw, 36px);
+        font-size: clamp(28px, 5vw, 40px);
         line-height: 1.25;
-        text-align: center;
         overflow-wrap: break-word;
     }
 
     .p1 {
         margin-top: 24px;
-        text-align: center;
+        font-size: 16px;
     }
 
     .all {
         margin-top: 24px;
     }
 
+    .container2,
+    .container3,
+    .container4 {
+        padding: 70px 6%;
+    }
+
+    .container2 .bienvenidos {
+        margin-bottom: 35px;
+    }
+
+    .iconos {
+        gap: 20px;
+    }
+
+    .icono {
+        width: clamp(60px, 12vw, 90px);
+        height: clamp(60px, 12vw, 90px);
+        margin: 8px;
+    }
+
+    .minicontainer {
+        flex-wrap: wrap;
+    }
+
     .cajaDeComentarios {
-        margin-top: 30px;
+        flex: 1 1 100%;
         width: 100%;
-        max-width: 500px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        background-color: hsl(194, 68%, 90%);
-        border-radius: 4px;
+        max-width: none;
+        padding: 22px;
     }
 
     .projectContainer {
-        display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        background-color: white;
-        margin-bottom: 20px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 4px;
+        gap: 15px;
+        padding: 20px;
     }
 
     .contenido {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        max-width: 100%;
-        box-sizing: border-box;
+        flex: auto;
+        width: 100%;
+        padding: 5px;
     }
 
     .img {
         max-width: 100%;
-        object-fit: contain;
+    }
+}
+
+/* ========================================
+   MÓVILES PEQUEÑOS
+======================================== */
+
+@media (max-width: 480px) {
+
+    .container1 {
+        padding: 90px 20px 45px;
     }
 
+    .container2,
+    .container3,
+    .container4 {
+        padding: 60px 20px;
+    }
+
+    .bienvenidos {
+        font-size: 29px;
+    }
+
+    .p1,
+    .p2 {
+        font-size: 15px;
+    }
+
+    .iconos {
+        gap: 15px;
+    }
+
+    .icono {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cajaDeComentarios {
+        padding: 18px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .projectContainer {
+        padding: 15px;
+    }
+
+    .minicontainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

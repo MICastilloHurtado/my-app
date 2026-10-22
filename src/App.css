@@ -1,5 +1,25 @@
+
 /* Reset de estilos */
-body, h1, h2, h3, p, ul, li {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
@@ -9,12 +29,14 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-html, body {
-  height: 100%;
+/* Contenedor principal de React */
+.App {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 /* Encabezados */
@@ -39,7 +61,7 @@ h3 {
 p {
   margin-bottom: 1rem;
   color: #121847;
-  font-family: Century Gothic;
+  font-family: Century Gothic, sans-serif;
 }
 
 /* Enlaces */
@@ -70,6 +92,7 @@ a:hover {
   background-color: #0056b3;
 }
 
+/* Encabezado */
 header {
   width: 100%;
 }
